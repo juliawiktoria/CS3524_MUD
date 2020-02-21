@@ -1,5 +1,7 @@
 /***********************************************************************
  * cs3524.solutions.mud.MUD
+ * CS3524 DISTRIBUTED SYSTEMS AND SECURITY - ASSIGNMENT 2 MUD GAME
+ * JULIA WIKTORIA ZIEBA (ID: 51768280)
  ***********************************************************************/
 
 package cs3524.solutions.mud;
