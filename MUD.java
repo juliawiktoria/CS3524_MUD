@@ -4,7 +4,7 @@
  * JULIA WIKTORIA ZIEBA (ID: 51768280)
  ***********************************************************************/
 
-package cs3524.solutions.mud;
+package CS3524_MUD_GAME;
 
 import java.io.FileReader;
 import java.io.BufferedReader;
@@ -95,29 +95,33 @@ public class MUD
      */
     private void createEdges( String edgesfile )
     {
-        try {
+        try 
+        {
             FileReader fin = new FileReader( edgesfile );
-                BufferedReader edges = new BufferedReader( fin );
-                String line;
-                while((line = edges.readLine()) != null) {
-                    StringTokenizer st = new StringTokenizer( line );
-            if( st.countTokens( ) < 3 ) {
-                System.err.println( "Skipping ill-formatted line " + line );
-                continue;
-            }
-            String source = st.nextToken();
-            String dir    = st.nextToken();
-            String dest   = st.nextToken();
-            String msg = "";
-            while (st.hasMoreTokens()) {
-                msg = msg + st.nextToken() + " "; 
-                    }
-            addEdge( source, dest, dir, msg );
+            BufferedReader edges = new BufferedReader( fin );
+            String line;
+            while((line = edges.readLine()) != null) 
+            {
+                StringTokenizer st = new StringTokenizer( line );
+                if( st.countTokens( ) < 3 ) 
+                {
+                    System.err.println( "Skipping ill-formatted line " + line );
+                    continue;
+                }
+                String source = st.nextToken();
+                String dir    = st.nextToken();
+                String dest   = st.nextToken();
+                String msg = "";
+                while (st.hasMoreTokens()) 
+                {
+                    msg = msg + st.nextToken() + " "; 
+                }
+                addEdge( source, dest, dir, msg );
             }
         }
-        catch( IOException e ) {
-            System.err.println( "Graph.createEdges( String " + 
-                    edgesfile + ")\n" + e.getMessage() );
+        catch( IOException e ) 
+        {
+            System.err.println( "Graph.createEdges( String " + edgesfile + ")\n" + e.getMessage() );
         }
     }
 
@@ -130,7 +134,8 @@ public class MUD
      */
     private void recordMessages( String messagesfile )
     {
-        try {
+        try 
+        {
             FileReader fin = new FileReader( messagesfile );
             BufferedReader messages = new BufferedReader( fin );
             String line;

@@ -4,7 +4,7 @@
  * JULIA WIKTORIA ZIEBA (ID: 51768280)
  ***********************************************************************/
 
-package cs3524.solutions.mud;
+package CS3524_MUD_GAME;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -53,7 +53,7 @@ class Vertex
 				summary += iter.next() + " ";
 			} while ( iter.hasNext() );
 		}
-		
+
 		summary += "\n\n";
 		return summary;
     }

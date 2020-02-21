@@ -4,7 +4,7 @@
  * JULIA WIKTORIA ZIEBA (ID: 51768280)
  ***********************************************************************/
 
-package cs3524.solutions.mud;
+package CS3524_MUD_GAME;
 
 // Represents an path in the MUD (an edge in a graph).
 class Edge
